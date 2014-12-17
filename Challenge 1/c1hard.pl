@@ -3,6 +3,7 @@
 #Author: Baron Daugherty
 #Purpose: Think of a number between 1 and 100, the computer tries to guess
 #Notes: A "binary search" would be more efficient as it eliminates half of the possibilities every turn but this was for fun
+#so I used rand to simulate a "random" guess.
 use strict;
 use warnings;
 
