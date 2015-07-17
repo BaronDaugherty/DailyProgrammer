@@ -31,7 +31,7 @@ while ($rolling) {
             print("Player point set at $point\n");
         }
     }
-    if ($num_rolls gt 1) {
+    else{
         if ($roll eq 7) {
             print("Player craps on the pass with $roll\n");
             $rolling = 0;
