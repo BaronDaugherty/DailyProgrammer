@@ -16,7 +16,7 @@ using namespace std;
 
 /* funtion prototypes */
 bool is_leap_year(uint16_t year);
-uint16_t num_of_years(uint16_t year, uint16_t month, uint16_t day);
+uint16_t num_of_years(uint16_t year);
 uint16_t num_of_leap_years(uint16_t years);
 uint16_t num_of_days(uint16_t years, uint16_t leap_years,
 	uint16_t year, uint16_t month, uint16_t day);
@@ -59,7 +59,7 @@ bool is_leap_year(uint16_t year)
 		return false;
 }	//END is_leap_year
 
-uint16_t num_of_years(uint16_t year, uint16_t month, uint16_t day)
+uint16_t num_of_years(uint16_t year)
 //gives us the number of whole years since 1900
 {
 	return year - 1900;
@@ -90,7 +90,7 @@ uint16_t num_of_days(uint16_t years, uint16_t leap_years,
 	//set up the number of days in a year / months
 	const int DAYS_IN_YEAR = 365;
 	uint16_t days_in_month[12] = {31, is_leap_year(year) ? 29:28, 31, 30, 31, 
-									30, 31, 31, 30, 31, 30 , 31};
+					30, 31, 31, 30, 31, 30 , 31};
 	
 	//get the initial days based on whole years
 	uint16_t days = 0;
@@ -117,7 +117,7 @@ void calculate(uint16_t year, uint16_t month, uint16_t day)
 //run all the calculations for us
 {
 	//variable for the day
-	string days_of_week[7] = {	"SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY",
+	string days_of_week[7] = { "SUNDAY", "MONDAY", "TUESDAY", "WEDNESDAY",
 		"THURSDAY", "FRIDAY", "SATURDAY" };
 
 	//do a bunch of the calculations
