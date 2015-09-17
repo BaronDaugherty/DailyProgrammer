@@ -3,13 +3,13 @@
 	@author:	Baron Daugherty
 	@date:		2015-09-16
 	@desc:		The program should take three arguments: a day, a month, a year
-                It will then compute the day of the week that date will fall on.
+                	It will then compute the day of the week that date will fall on.
 	@note:		Unlike my python and perl submissions, here I have actually
-				constructed and implemented an algorithm to calculate the
-				day of the week rather than use existing libraries.
-				It has a bug, though... Some dates are spot on while others seem
-				to be +/- a day. I have a pretty good idea I know where it lies,
-				I'll come back to it soon
+			constructed and implemented an algorithm to calculate the
+			day of the week rather than use existing libraries.
+			It has a bug, though... Some dates are spot on while others seem
+			to be +/- a day. I have a pretty good idea I know where it lies,
+			I'll come back to it soon
 */
 
 /* includes & namespaces */
