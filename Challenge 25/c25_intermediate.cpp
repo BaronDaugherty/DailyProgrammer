@@ -17,7 +17,7 @@ int main()
 	int number;
 
 	//restrict to 255 for simplicity sake
-	cout << "Please enter a number[1-255]: ";
+	cout << "Please enter a number[max 255]: ";
 	cin >> number;
 	bitset<8> x(number);
 
